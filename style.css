@@ -1,8 +1,3 @@
-html {
-  background-image: url(https://images.unsplash.com/photo-1624261770442-8f167de68f25?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
-  background-size: cover;
-}
-
 main {
   max-width: 800px;
   width: 100%;
@@ -77,9 +72,12 @@ section {
   border: black solid 1px;
   padding: 10px;
   box-shadow: 5px -5px 10px #ddd;
+  background-color: #eee;
 }
 
-section.about-us {}
+section.about-us {
+
+}
 
 div.gallery {
   display: flex;
@@ -88,7 +86,9 @@ div.gallery {
   width: 100%;
 }
 
-section.contact-me {}
+section.contact-me p a {
+margin-bottom: 10px;
+}
 
 header .title-section {
   padding: 20px;
@@ -119,6 +119,10 @@ article.work a {
   right: 0;
 }
 
+article.work h3 {
+  padding: 10px;
+}
+
 article.work.top {
   flex-basis: 100%;
   background-image: url(https://images.unsplash.com/photo-1572293007244-8b60335d2b7d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80);
@@ -144,6 +148,7 @@ footer {
   font-family: 'Roboto', sans-serif;
   padding: 20px;
   text-align: right;
+  background-color: #ddd;
 }
 
 @media screen  and (max-width: 800px) {
