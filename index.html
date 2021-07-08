@@ -5,35 +5,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <script src="./script.js"></script>
     <title>Dave Blois' Portfolio</title>
 </head>
 
 <body>
     <header>
-        <h1>Dave Blois' Portfolio</h1>
-        <h2>I'm not messing around</h2>
+        <div class="title-section">
+            <h1>Dave Blois' Portfolio</h1>
+            <h2>I'm not messing around</h2>
+        </div>
+        <nav>
+            <ul>
+                <a href="#" class="nav-link">
+                    <li>Home</li>
+                </a>
+                <a href="#about-us" class="nav-link">
+                    <li>About Me</li>
+                </a>
+                <a href="#my-work" class="nav-link">
+                    <li>My Work</li>
+                </a>
+                <a href="#contact-me" class="nav-link">
+                    <li>Contact Me</li>
+                </a>
+            </ul>
+        </nav>
     </header>
-    <section class="about-us">
+    <section id="about-us">
+        <img src="https://images.unsplash.com/photo-1572293007244-8b60335d2b7d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Dave">
         <p>Hello there.</p>
         <p>Welcome to my humble portfolio. Have a look around. Feel free to try all the stuff out.</p>
         <p>I'm a web developer who's on a search for creative projects</p>
     </section>
-    <section class="my-work">
+    <section id="my-work">
         <article class="work top">First One</article>
         <article class="work second">Second</article>
         <article class="work third">Third</article>
         <article class="work fourth">Fourth</article>
         <article class="work fifth">Fifth</article>
     </section>
-    <section class="contact-me">
+    <section id="contact-me">
         <h2>Wanna get in touch?</h2>
         <h3>I'd love to hear from you</h3>
         <a href="mailto:dave@blois.ca">Dave@blois.ca</a>
     </section>
     <footer>
-
+        copyright Dave Blois 2021.
     </footer>
 </body>
 
