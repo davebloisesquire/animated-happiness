@@ -35,13 +35,10 @@ header {
 
 div.title-section {
   width: content;
-  /* width: 100%; */
-  background: red;
 }
 
 nav {
   width: content;
-  background: green;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   display: flex;
@@ -82,10 +79,11 @@ section {
 
 section.about-us {}
 
-section.my-work div.gallery {
+div.gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  width: 100%;
 }
 
 section.contact-me {}
@@ -95,7 +93,9 @@ header .title-section {
 }
 
 article.work {
-  flex: 1 0 25%;
+  color: white;
+  flex: 1 0 50%;
+  max-width: 300px;
 }
 
 article.work.top {
