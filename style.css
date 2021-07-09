@@ -1,7 +1,8 @@
 body {
   background-color: #f8f8ff;
 }
-/* Cover the basics */
+/* Cover the basics
+Text and Main Divs and Such */
 main {
   max-width: 800px;
   width: 100%;
