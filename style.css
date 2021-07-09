@@ -1,38 +1,48 @@
+body {
+  background-color: #f8f8ff;
+}
+/* Cover the basics */
 main {
   max-width: 800px;
   width: 100%;
   margin: auto;
 }
-
 h1 {
   font-size: 2rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
 }
-
 h2 {
   font-size: 1.5rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   margin-bottom: 10px;
 }
-
 h3 {
   font-size: 1.2rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
+p {
+  font-family: 'Roboto', sans-serif;
+}
+img {
+  width: 100%;
+}
 
+/* Header Section */
 header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
+/* Header Title Section */
 div.title-section {
   width: content;
 }
 
+/* Header Navigation Section */
 nav {
   width: content;
   font-family: 'Roboto', sans-serif;
@@ -44,39 +54,35 @@ nav {
 }
 
 nav li {
+  transition: padding 300ms linear;
   padding: 10px;
   display: inline-block;
 }
 
-nav li:hover {}
+nav li:hover {
+  text-shadow: 1px 1px 2px #999;
+  transition: padding 300ms linear;
+  padding: 10px 15px;
+}
 
 nav a {
   text-decoration: none;
   color: black;
 }
 
-p {
-  font-family: 'Roboto', sans-serif;
-}
-
-img {
-  width: 100%;
-}
-
-header {}
-
+/* Sections */
 section {
   display: block;
   margin: 20px;
   font-family: 'Roboto', sans-serif;
-  border: black solid 1px;
+  /* border-radius: 7px;
+  border: black solid 1px; */
   padding: 10px;
   box-shadow: 5px -5px 10px #ddd;
   background-color: #eee;
 }
 
-section.about-us {}
-
+/* About Us Section */
 .about-us-content {
   display: flex;
 }
@@ -91,6 +97,7 @@ section.about-us {}
   padding: 5px;
 }
 
+/* Work Section */
 div.gallery {
   display: flex;
   flex-wrap: wrap;
@@ -112,7 +119,9 @@ article.work {
   height: 200px;
   background-position: center;
   background-size: cover;
+  /* Adding a little grayscale when the mouse isn't hovering on it. So it will seem more interesting and burst with color when hovered over */
   filter: grayscale(100%);
+  transition: filter 200ms linear;
 }
 
 article.work:hover {
@@ -132,6 +141,7 @@ article.work a {
 }
 
 article.work h3 {
+  text-shadow: 1px 1px 8px black;
   padding: 10px;
 }
 
@@ -141,21 +151,22 @@ article.work.top {
 }
 
 article.work.second {
-  background-image: url(https://images.unsplash.com/photo-1572293007244-8b60335d2b7d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80);
+  background-image: url(https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
 }
 
 article.work.third {
-  background-image: url(https://images.unsplash.com/photo-1572293007244-8b60335d2b7d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80);
+  background-image: url(https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80);
 }
 
 article.work.fourth {
-  background-image: url(https://images.unsplash.com/photo-1572293007244-8b60335d2b7d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80);
+  background-image: url(https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1966&q=80);
 }
 
 article.work.fifth {
-  background-image: url(https://images.unsplash.com/photo-1572293007244-8b60335d2b7d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80);
+  background-image: url(https://images.unsplash.com/photo-1557853197-aefb550b6fdc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
 }
 
+/* Footer Section */
 footer {
   font-family: 'Roboto', sans-serif;
   padding: 20px;
@@ -163,11 +174,14 @@ footer {
   background-color: #ddd;
 }
 
+/* Small Screen Version */
 @media screen and (max-width: 800px) {
+  /* Small Screen Work Area */
   article.work {
     flex: 1 0 100%;
   }
 
+  /* about us section */
   .about-us-content {
     display: block;
   }
