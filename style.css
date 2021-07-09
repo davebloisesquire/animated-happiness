@@ -75,9 +75,10 @@ section {
   display: block;
   margin: 20px;
   font-family: 'Roboto', sans-serif;
+  /* I don't think I like this border or radius anymore, but I want to keep it here incase I change my mind. */
   /* border-radius: 7px;
   border: black solid 1px; */
-  padding: 10px;
+  padding: 20px 10px 50px 10px;
   box-shadow: 5px -5px 10px #ddd;
   background-color: #eee;
 }
@@ -174,7 +175,7 @@ footer {
   background-color: #ddd;
 }
 
-/* Small Screen Version */
+/* Small Screen Version Changes */
 @media screen and (max-width: 800px) {
   /* Small Screen Work Area */
   article.work {
